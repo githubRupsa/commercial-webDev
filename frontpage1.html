@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <title>ProdCraft</title>
+    <link rel="stylesheet" href="frontpage.css">
+  </head> 
+  <body>
+    <header>
+      <div id="menu">
+        <div id="NPanel">
+          <div id="Nnav">
+        <!-- <img id="mClose" onclick="closeMenu()" style="margin: 0;"src="https://cdn-icons-png.flaticon.com/128/2961/2961937.png" > -->
+           
+  
+       </div>
+      </div>
+      
+      <img id="back" style="height:20px; cursor: pointer;" onclick="closeMenu()" src="https://cdn-icons-png.flaticon.com/128/10728/10728089.png" >
+      <ul>
+        <li>Products</li>
+        <li>About</li>
+        <li>Privacy</li>
+        <li>Contact</li>
+       </ul>
+      </div>
+      <div id="name">
+        <div id="name-web">
+          <p style="font-weight:700;float: left;color:#373131;font-size:25px;margin-top:30px;"> PRODCRAFT</p>
+             
+        </div>
+        <div id="NPanel">
+        <div id="Nnav">
+          
+        <input name="Search" id="search-input" placeholder="Search Items"></input>
+        <img id="sOpen" onclick="openSearch()" src="https://cdn-icons-png.flaticon.com/128/711/711319.png" >
+        <img id="sClose" onclick="closeSearch()" src="https://cdn-icons-png.flaticon.com/128/2961/2961937.png">
+        <img id="aOpen"onclick="accountOpen()"src="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" >
+        <img id="aClose"onclick="accountClose()" src="https://cdn-icons-png.flaticon.com/128/2985/2985149.png" alt="">
+      <img  id="cOpen" src="https://cdn-icons-png.flaticon.com/128/9219/9219671.png">
+      <img id="mOpen" onclick="openMenu()"src="https://cdn-icons-png.flaticon.com/128/11290/11290280.png" alt="">
+      <!-- <div id="mOpen" onclick="openMenu()">
+
+       
+         <div id="ham-upper"></div>
+         <div id="ham-middle"></div>
+         <div id="ham-lower"></div>
+         </div> -->
+        
+
+     </div>
+    </div>
+  </div>
+    <script>
+      function openSearch(){
+        document.getElementById("search-input").style.width="300px";
+        document.getElementById("search-input").style.border="solid";
+        document.getElementById("search-input").style.transition="0.5s ease-in";
+        document.getElementById("sOpen").style.display="none";
+        document.getElementById("sClose").style.display="block";
+
+        
+      }
+      function closeSearch(){
+         document.getElementById("search-input").style.width="0";
+         document.getElementById("search-input").style.border="none";
+         document.getElementById("search-input").style.transition="0.5s ease-in";
+         document.getElementById("sOpen").style.display="block";
+        document.getElementById("sClose").style.display="none";
+        
+      }
+      function accountOpen(){
+        document.getElementById("panel1-dropdown").style.height="330px";
+        document.getElementById("panel1-dropdown").style.display="block";
+        document.getElementById("panel1-dropdown").style.transition="0.5s ease-out";
+        document.getElementById("aOpen").style.display="none";
+        document.getElementById("aClose").style.display="block";
+        
+        
+        
+      }
+      function accountClose(){
+        document.getElementById("panel1-dropdown").style.height="0";
+        document.getElementById("panel1-dropdown").style.display="none";
+        document.getElementById("panel1-dropdown").style.transition="0.5s ease-out";
+        document.getElementById("aOpen").style.display="block";
+        document.getElementById("aClose").style.display="none";
+      }
+
+      function openMenu(){
+        document.getElementById("menu").style.width="210px";
+        document.getElementById("menu").style.transition="0.6s";
+        document.body.style.width="1100px";
+        document.body.style.transition="0.7s";
+        
+        document.getElementById("sOpen").style.translate="55px";
+        document.getElementById("aOpen").style.translate="55px";
+        document.getElementById("cOpen").style.translate="55px";
+        document.getElementById("mOpen").style.translate="220px";
+        // document.getElementById("ham-upper").style.transform="rotateZ(42deg) translate(-3px,10px)";
+        // document.getElementById("ham-upper").style.transition="1s";
+        // document.getElementById("ham-lower").style.transform="rotateZ(-42deg) translate(-3px,-11px)";
+        // document.getElementById("ham-lower").style.transition="1s";
+      
+        
+
+          
+
+      }
+      function closeMenu(){
+        document.getElementById("menu").style.width="0";
+        document.getElementById("menu").style.transition="0.4s";
+        document.body.style.width="100%";
+        document.body.style.transition="0.7s";
+        
+        document.getElementById("sOpen").style.translate="0";
+        document.getElementById("aOpen").style.translate="0";
+        document.getElementById("cOpen").style.translate="0";
+        document.getElementById("mOpen").style.translate="0";
+        
+       
+          
+
+      }
+    </script>
+  
+      </div>  
+
+    
+    
+      <div id=panel1>
+        <div id="panel1-dropdown">
+          <div id="panel1-dropdown-list">
+
+          
+          <ul>
+            <li>Profile</li>
+            <br>
+            <li>Wishlist</li>
+            <br>
+            <li>Orders</li>
+            <br>
+            <li>Gift Cards</li>
+            <br>
+            <li>Log Out<span>&rarr;</span></li>
+          </ul>
+        </div>
+        </div>
+        <h1 style="font-size: 80px; font-weight: 400; letter-spacing: 0.1em;">BEST PRODUCT</h1>
+        <h3 style="font-size: 25px; font-weight: 300;">NEW COLLECTION 2024</h3>
+        <h6>SHOP NOW<span onclick="openShop()">&rarr;</span></h6>
+      </div>
+
+  </header>
+<main>
+
+<div id="image-list-container">
+  <input type="radio" name="radio-btn" id="radio1">
+  <input type="radio" name="radio-btn" id="radio2">
+
+  <div id="image-list1">
+  
+  <div id="image-list-item">
+    <img title="storage" src="https://m.media-amazon.com/images/I/71d1ytcCntL._AC_UY327_FMwebp_QL65_.jpg"></img>
+  </div>
+  <div id="image-list-item">
+    <img src="https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1713484800&semt=sph"></img>
+  </div>
+  <div id="image-list-item">
+    <a href="product.html"><img src="https://5.imimg.com/data5/SELLER/Default/2022/7/UK/RK/ZT/15678771/boat-rockerz-610-wireless-bluetooth-headphone.jpg"></img></a>
+  </div>
+  <div id="image-list-item">
+    <img src="https://m.media-amazon.com/images/I/41vCwdjHqEL._SR480,440_.jpg">
+  </div>
+
+</div>
+
+<div id="image-list2">
+  <div id="image-list-item">
+    <img src="https://m.media-amazon.com/images/I/61jI4jxdGmL._SX679_.jpg" >
+  </div>
+  <div id="image-list-item">
+    <img src="https://m.media-amazon.com/images/I/41AJbRJtcEL._AC_SR400,600_.jpg" >
+  </div>
+  <div id="image-list-item">
+    <img src="https://m.media-amazon.com/images/I/41AJbRJtcEL._AC_SR400,600_.jpg" >
+  </div>
+  <div id="image-list-item">
+    <img src="https://m.media-amazon.com/images/I/41AJbRJtcEL._AC_SR400,600_.jpg" >
+  </div>
+</div>
+
+  <div id="navigation-manual">
+    <label for="radio1" id="manual-btn"></label>
+    <label for="radio2" id="manual-btn"></label>
+  </div>
+
+  <div id="navigation-auto">
+    <div id="auto-btn1"></div>
+    <div id="auto-btn2"></div>
+  </div>
+  </div>
+
+  
+
+
+  
+</div>
+
+
+</main>
+    <Footer>
+      <div id="about">About</div>
+      <div id="contact us">Contact us</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dignissimos nisi voluptate magnam quia rerum molestiae incidunt culpa odio provident nihil ratione animi laudantium at corrupti iure debitis, impedit quo?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, incidunt ipsa esse corporis optio vel ratione quibusdam? Amet minima corrupti, esse dolorem, velit quasi ea sapiente voluptatibus illo consequatur in!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, incidunt ipsa esse corporis optio vel ratione quibusdam? Amet minima corrupti, esse dolorem, velit quasi ea sapiente voluptatibus illo consequatur in!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, incidunt ipsa esse corporis optio vel ratione quibusdam? Amet minima corrupti, esse dolorem, velit quasi ea sapiente voluptatibus illo consequatur in!</p>
+
+    </footer>
+    <Aside></Aside>
+  </body>
+  </html>

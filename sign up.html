@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <Body>
+       
+    <div id="log-page">
+           
+    
+     <form name="form1" onsubmit="return Vad()">
+     <div id="full-log">
+       <div id="forText">
+
+           <P>Name</P>
+           <input name="Name" placeholder="John Doe" required></input>
+           <p>Phone Number</p>
+           <input name="Phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="0123456789" required></input>
+           <p>Gmail</p>
+           <input name="Gmail" type="email" inputmode="email" placeholder="johndoe12@gmail.com" required></input>
+           <p>Country</p>
+           <select id="Country" name="Country" required>
+            <option value="">Select a Country</option>
+            <option value="1">India</option>
+            <option value="2">USA</option>
+            <option value="3">More..</option>
+           </select>
+           <input type=submit value="Sign Up"></input>
+
+      </div>
+        <div id="forTab">
+           
+           <div id="icons">
+              <img src="https://cdn-icons-png.flaticon.com/128/2504/2504914.png" alt="" >
+              <img src="https://cdn-icons-png.flaticon.com/128/2504/2504903.png" alt="">
+              <img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt="">
+           </div>
+        
+          <div id="seperate">
+             <p>Already have an account?</p>
+             <input type=submit value="Log in"></input>
+          </div>
+      </div>
+   </div>
+</div>
+  </form>
+    
+       </div>
+       <script>
+           function Vad() {
+           var x = document.forms["form"]["Name"].value;
+           if (x == "") {
+          alert("Name must be filled out");
+          return false;
+          }
+          var y = document.forms["form1"]["Phone"].value;
+          if (y == "") {
+          alert("Phone must be filled out");
+          return false;
+          }
+          var z = document.forms["form1"]["Gmail"].value;
+          if (z == "") {
+          alert("Gmail must be filled out");
+          return false;
+          }
+          var a = document.forms["form1"]["Country"].value;
+          if (a == "") {
+          alert("Location must be filled out");
+          return false;
+          }
+         }
+       </script>
+    </Body>
+</html>
